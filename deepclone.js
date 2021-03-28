@@ -37,28 +37,6 @@ function isObject(obj) {
     return obj !== null && typeof obj === 'object'
   }
 
-// function cloneDeep(obj) {
-//     // debugger
-//     let vistedMap = new Map();
-//     function baseClone(target) {
-      
-//       if(!isObject(target)) return target
-  
-//       if(vistedMap.get(target)) return vistedMap.get(target)
-  
-//       let result = Array.isArray(target) ? [] : {}
-  
-//       vistedMap.set(target, result)
-      
-//       const keys = Object.keys(target);
-//       for(let i = 0, len = keys.length; i < len; i++) {
-//         result[keys[i]] = baseClone(target[keys[i]])
-//       }
-//       return result
-//     }
-//     return baseClone(obj)
-//   }
-
 const obj1 ={
     obj_1:{
         a:1,
